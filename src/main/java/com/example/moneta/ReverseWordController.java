@@ -16,7 +16,6 @@ import java.util.stream.IntStream;
 public class ReverseWordController {
     private final Set<Character> upperChars;
 
-
     public ReverseWordController(@Value("${specialChars}") String upperChars) {
         this.upperChars = new HashSet<>(upperChars.length());
         IntStream.range(0, upperChars.length()).forEach(i -> this.upperChars.add(upperChars.charAt(i)));
